@@ -1,0 +1,10 @@
+git checkout master
+git fetch origin master
+git reset --hard origin/master
+
+For Node
+node app.js
+
+For React
+npm run build
+server -s build

@@ -1,0 +1,62 @@
+
+.voucher-issue-text {
+  display: flex; 
+  width: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 20px; 
+  font-family: Lato;
+}
+
+.voucher-issue-box-container {
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  padding-top: 20px; 
+  background: #f5f5f0;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px; 
+  padding: 0px; 
+  margin: 0px;
+}
+
+.voucher-issue-text-item {
+  flex: 1; 
+  font-family: Lato; 
+  font-style: normal; 
+  font-size: 16px; 
+  color: #000000; 
+  padding: 0px; 
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+}
+
+.voucher-issue-message {
+  height: 60px; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-family: Lato; 
+  font-style: italic; 
+  font-size: 16px; 
+  color: red;
+}
+
+.voucher-issue-button-outer-container {
+  height: 60px; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.voucher-issue-button-container {
+  display: flex; 
+  flex: 1; 
+  justify-content: center;
+}

@@ -1,0 +1,68 @@
+.formlabeltext-heading {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.formlabeltext-outer-container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.formlabeltext-inner-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.formlabeltext-inner-container-label {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 16px;
+  color: #000000;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formlabeltext-inner-container-text {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 16px;
+  color: #000000;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.formlabeltext-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  background: #f5f5f0;
+  border: 0.5px solid rgba(0, 0, 0, .5);
+  padding: 10px;
+}
+
+.formlabeltext-button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.formlabeltext-button-position {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+

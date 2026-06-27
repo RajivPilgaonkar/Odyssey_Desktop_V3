@@ -1,0 +1,47 @@
+
+.presto-ch-list-inner-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.presto-trsf-list-inner-container {
+  /*width: 67%;*/
+  /*min-height: 40px;*/
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.presto-trsf-list-item-outer-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10px; 
+  margin-bottom: 2px;
+  padding: 0px;
+}
+
+.presto-trsf-list-item-container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  border-radius: 10px; 
+  padding: 0px;
+}
+
+.presto-trsf-list-item {
+  display: flex; 
+  font-family: Lato; 
+  font-size: 16px;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  padding: 0px;
+}
+

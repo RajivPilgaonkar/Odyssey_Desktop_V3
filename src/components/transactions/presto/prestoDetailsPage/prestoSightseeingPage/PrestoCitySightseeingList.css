@@ -1,0 +1,16 @@
+
+.presto-ch-list-inner-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.presto-ss-list-inner-container {
+  /*width: 67%;*/
+  /*min-height: 40px;*/
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

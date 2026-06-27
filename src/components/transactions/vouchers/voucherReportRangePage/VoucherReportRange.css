@@ -1,0 +1,51 @@
+.report-page_container {
+  background: #e6f2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.report-header {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.report-item {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.box-outer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-params-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background: #f5f5f1;
+  border: 0.5px solid rgba(0, 0, 0, .5);
+  padding: 10px;
+  margin: 5px;
+}
+

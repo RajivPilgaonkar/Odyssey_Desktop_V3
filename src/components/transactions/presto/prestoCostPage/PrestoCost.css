@@ -1,0 +1,9 @@
+.presto-extra-margin-text {
+  display: flex; 
+  width: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 20px; 
+  font-family: Lato;
+}
+

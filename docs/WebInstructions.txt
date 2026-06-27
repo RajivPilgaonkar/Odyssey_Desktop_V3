@@ -1,0 +1,23 @@
+1. In case of a blank screen not responding
+	(a) On the server, 2 DOS black windows will be open.
+	(b) Go to each one of them and press the 'Down Arrow Key' on the keyboard
+
+2. If windows (or the server) is re-started
+	(a) Windows Start Menu -> Node Js 
+	(b) In the black command prompt window 
+		i) E:  
+		ii) cd odyssey_web/backend/dev 
+		iii) node app.js
+	(c) You should see some message on the screen 'running on DB', 'running on PORT'
+	(d) Do not close this window as this runs the node connection with the database. 
+
+3. If windows (or the server) is re-started
+	(a) Windows Start Menu -> Node Js 
+	(b) In the black command prompt window 
+		i) E:  
+		ii) cd odyssey_web/desktop/dev 
+		iii) serve -s build
+	(c) You should see some message on the screen 'Serving...', 'Local ..', 'On Your Network ...'
+	(d) Do not close this window as this runs the React server. 
+
+ 

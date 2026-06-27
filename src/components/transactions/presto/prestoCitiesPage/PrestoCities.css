@@ -1,0 +1,85 @@
+.presto-list-header-container {
+  display: flex; 
+  width: 100%; 
+  height: 40px;
+}
+
+.presto-list-header-buttons-container {
+  flex: 1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.presto-list-outer-container {
+  width: 100%;
+  height: 400px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.presto-list-inner-container {
+  width: 67%;
+  min-height: 40px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.presto-list-item-outer-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 30px; 
+  border-radius: 10px; 
+  margin-bottom: 2px;
+  padding: 0px;
+}
+
+.presto-list-item-container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 30px; 
+  height: 33px;
+  width: 100%; 
+  border-radius: 10px; 
+  padding: 0px;
+}
+
+.presto-list-item {
+  display: flex; 
+  font-family: Lato; 
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.presto-list-item-split-cell-parent {
+  display: flex; 
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.presto-list-item-split-cell-child {
+  display: flex; 
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato; 
+  font-size: 12px; 
+  min-width: 100%;
+  /*min-height: 90%;*/
+  /*height: 90%;*/
+  padding: 0px;
+}

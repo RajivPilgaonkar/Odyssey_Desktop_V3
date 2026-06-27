@@ -1,0 +1,49 @@
+
+#roundedbox {
+  border-radius: 15px;
+  background: #f5f5f0;
+  border: 0.5px solid rgba(0, 0, 0, .5);
+  padding: 10px;
+}
+
+.dx-form .dx-widget {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Calibri';*/
+  font-weight: 400;  
+}
+
+.dx-field-item-label {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dx-field-item-content {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 450;  
+}
+
+
+.dx-popup-content {
+  background: #ffefcc; 
+}
+
+.dx-form {
+  background: #ecf9ec; 
+}
+
+/*
+#formSaveButton {
+  color: green;  
+  border-color: green;    
+  background-color: #ccffeb;
+}
+*/
+
+/*
+.dx-texteditor-container {
+  height: 30px;
+}
+*/
+

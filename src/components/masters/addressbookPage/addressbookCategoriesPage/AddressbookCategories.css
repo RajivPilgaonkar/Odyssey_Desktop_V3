@@ -1,0 +1,37 @@
+.list-parent-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+
+.list-checkbox-container {
+  display: flex; 
+  flex: 1; 
+  justify-content: center;
+  align-items: center;
+}
+
+.list-label-container {
+  display: flex; 
+  flex: 3; 
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button-container {
+  display: flex; 
+  flex: 1; 
+  justify-content: center;
+  align-items: center;
+}
+
+

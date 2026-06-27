@@ -1,0 +1,45 @@
+========================================
+Daily backup
+========================================
+git status
+git add .
+git commit -m May_20_2022
+git push -u origin master
+
+
+
+========================================
+Updating a machine with the latest code
+... This will overwrite the local copy
+========================================
+git checkout master
+git fetch origin master
+git reset --hard origin/master
+
+npm install
+npm run build
+serve -s build OR {serve -l 3010 -s build} on a port other than 3000
+//localhost:3000
+
+
+========================================
+Cloning on another machine
+========================================
+md dev
+cd dev
+git clone https://github.com/RajivPilgaonkar/Odyssey_desktop.git .
+git checkout master
+
+npm install 
+npm run start
+npm run build
+serve -l 3010 -s build
+
+============================================
+Deleting a directory 'dev' with its contents
+============================================
+cd dev
+del /F/Q/S *.* > nul
+cd ..
+rmdir /Q/S dev
+

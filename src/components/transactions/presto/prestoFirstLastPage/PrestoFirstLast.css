@@ -1,0 +1,20 @@
+
+.presto-firstlast-list-header {
+  display: flex; 
+  flex-direction: row;
+  width: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 20px; 
+  font-family: Lato;
+}
+
+.presto-firstlast-list-switch-item {
+  display: flex; 
+  flex-direction: row;
+  width: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 18px; 
+  font-family: Lato;
+}

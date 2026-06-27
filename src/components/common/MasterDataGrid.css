@@ -1,0 +1,33 @@
+
+.dx-datagrid {
+  background-color: #fff7e6;
+}
+
+.dx-toolbar {
+  background-color: #fff7e6;
+}
+
+.dx-datagrid-pager {
+  background-color: #ffebcc;
+}
+
+.dx-datagrid-headers {
+  background-color: #ffebcc;
+  color: #000;
+  font-size: 16px;
+}
+
+.dx-field-item-help-text {
+  color: red;
+}
+
+
+.groupRightClass .dx-form-group-content {  
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+}  
+
+.groupBottomClass .dx-form-group-content {  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}  

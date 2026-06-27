@@ -1,0 +1,15 @@
+.buttons-panel-container {
+  height: 60;
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
