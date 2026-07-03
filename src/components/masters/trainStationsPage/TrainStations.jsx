@@ -445,7 +445,7 @@ function TrainStations() {
         placeholder="Select a city..."
         getSelectedRecord={onCitySelect}
         showColumnHeaders={false}
-        value={compVar.selectedCity}
+        value={compVar.selectedCities_id}
         labelStyle={{width: 60}}
         dropDownStyle={{width: 60}}
       />

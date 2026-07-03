@@ -476,7 +476,7 @@ function InvExchRate() {
         placeholder="Select a currency..."
         getSelectedRecord={onCurrencySelect}
         showColumnHeaders={false}
-        value={compVar.selectedCurrency}
+        value={compVar.selectedCurrencies_id}
         labelStyle={{width: 90}}
         dropDownStyle={{width: 60}}
       />

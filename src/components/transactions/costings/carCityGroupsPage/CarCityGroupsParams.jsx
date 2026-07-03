@@ -234,7 +234,6 @@ function CarCityGroupsParams(props) {
       compVar.agents_id = e[0].Addressbook_id;
       compVar.agent = e[0].OrgCity;
       await updateAllLookups([2,3]);
-      forceRender();
     }
   }
 
@@ -242,9 +241,8 @@ function CarCityGroupsParams(props) {
   const onCarHireGroupChanged = async (e) => {
     if (e !== undefined && e !== null) {
       compVar.carHireGroups_id = e[0].CarHireGroups_id;
-      compVar.carHireGroup = e[0].CarHireGroup;      
+      compVar.carHireGroup = e[0].CarHireGroup;
       await updateAllLookups([3]);
-      forceRender();
     }
   }
 
@@ -275,21 +273,18 @@ function CarCityGroupsParams(props) {
   const agentSwitchValueChanged = async (e) => {
     compVar.agentSwitchValue = e;
     await updateAllLookups([1,2,3]);
-    forceRender();
   }
 
   //**********************************************************/
   const carHireGroupSwitchValueChanged = async (e) => {    
     compVar.carHireGroupSwitchValue = e;
     await updateAllLookups([2,3]);
-    forceRender();
   }
 
   //**********************************************************/
   const wefSwitchValueChanged = async (e) => {
     compVar.wefSwitchValue = e;
     await updateAllLookups([3]);
-    forceRender();
   }
 
   //**********************************************************/
@@ -330,12 +325,12 @@ function CarCityGroupsParams(props) {
 
     const lookups = [compVar.agentLookup, compVar.carHireGroupLookup , compVar.wefLookup];
     const fieldLists = [['OrgCity'],['CarHireGroup'],['DateRange']];
-    const valueExprs = ['Addressbook_id', 'CarHireGroups_id', 'wef'];
+    const valueExprs = ['Addressbook_id', 'CarHireGroups_id', 'Wef'];
     const displayExprs = ['OrgCity', 'CarHireGroup', 'DateRange'];
     const labels = ['Agent', 'Group', 'Wef'];
     const placeholders = ["Select an agent...", "Select a group...", ""];
     const getSelectedRecs = [onAgentChanged, onCarHireGroupChanged, onWefChanged];
-    const values = [compVar.agent, compVar.carHireGroup, compVar.dateRange];
+    const values = [compVar.agents_id, compVar.carHireGroups_id, compVar.wef];
     const componentWidths = [250,300,230];
     const dropDownWidths = [400,700,250];
     const labelStyles = [{width: 80, flex: 0.15}, {width: 80, flex: 0.15}, {width: 80, flex: 0.8}] 

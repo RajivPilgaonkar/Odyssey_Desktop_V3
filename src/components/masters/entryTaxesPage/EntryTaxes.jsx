@@ -468,7 +468,7 @@ function EntryTaxes() {
         placeholder="Select a state..."
         getSelectedRecord={onStateSelect}
         showColumnHeaders={false}
-        value={compVar.selectedState}
+        value={compVar.selectedStates_id}
         labelStyle={{width: 90}}
         dropDownStyle={{width: 60}}
       />

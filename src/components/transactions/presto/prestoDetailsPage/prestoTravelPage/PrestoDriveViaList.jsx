@@ -292,22 +292,25 @@ function PrestoDriveViaList(props) {
   //**********************************************************/
   const renderContent = () => {
 
-    const heights = getViewContainerHeights(compVar);
-    const containerHeight = heights.containerHeight - 300;
+    const ROW_HEIGHT = 34;
+    const GRID_HEADER_HEIGHT = 36;
+    const rowCount = (compVar.mainData && compVar.mainData.length) ? compVar.mainData.length : 0;
+    const gridHeight = GRID_HEADER_HEIGHT + (rowCount + 1) * ROW_HEIGHT;
+    const popupHeight = gridHeight + 200;
 
     const open = (props.open === undefined) ? true : props.open;
-    
+
     return (
       <>
-        <Popup visible={open} height={500} width={900} onHiding={closePopup}>
+        <Popup visible={open} height={popupHeight} width={900} onHiding={closePopup}>
 
           {!dataFetched &&
-            <div className="master-grid-container" style={{height: containerHeight}}>
+            <div className="master-grid-container">
               <LoadIndicator id="large-indicator" height={60} width={60} />
             </div>
           }
 
-          {dataFetched && 
+          {dataFetched &&
             <>
               <div style={{display: 'flex', flexDirection: 'column', width: '100%', justifyContent: 'center', alignItems: 'center', background: '#cce6ff'}}>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 20}}>
@@ -320,7 +323,7 @@ function PrestoDriveViaList(props) {
 
               <hr/>
 
-              <div className="master-grid-container" style={{height: containerHeight, background: '#ffefcc', justifyContent: 'flex-start'}}>
+              <div className="master-grid-container" style={{height: gridHeight, background: '#ffefcc', justifyContent: 'flex-start'}}>
                 {dataGridJsx()}
               </div>
 
@@ -329,7 +332,7 @@ function PrestoDriveViaList(props) {
               {buttonsJsx()}
             </>
           }
-          
+
         </Popup>
 
       </>

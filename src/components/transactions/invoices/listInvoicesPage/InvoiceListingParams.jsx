@@ -263,7 +263,7 @@ function InvoiceListingParams(props) {
     const labels = ['Company', 'Division'];
     const placeholders = ['Select a Company', 'Select a Division'];
     const valChanges = [onCompanyChanged, onDivisionChanged];
-    const selectedVals = [compVar.company, compVar.division];
+    const selectedVals = [compVar.companies_id, compVar.divisions_id];
 
     const lookup = lookups[index];
     const fieldList = fieldLists[index];

@@ -1,0 +1,57 @@
+1. Old Libraries
+2. Vite (No Create-Reat_App)
+3. Works on Node 20.19 / Node 16.12
+
+===============================
+
+Files changed from previous version
+1. VoucherTicketDetails.js (16:05:20)
+2. DropDownFormGrid.js
+3. PrestoCities.js
+4. PrestoTrainsList
+5. VoucherServicesDetails
+6. ElementsTrains
+7. DaysOfOperation
+8. PrestoDriveViaList
+
+==============================
+Drop Down box issue after DevExtreme upgrade
+
+9. RouteFinder
+10. AddressbookRankings
+11. CarHireAgents (agent + city dropdowns) 
+12. Consultants
+13. Distances
+14. EntryTaxes
+15. ExchRates
+16. InvExchRate
+17. InvPymtBeneficiary
+18. PreferredRoutes (from/to city)
+19. ShortestRoute (from/to city)
+20. Sightseeing
+21. Transfers
+22. Margins
+23. TaxRates
+24. TrainStations
+25. Classes
+26. AgentCancellations
+
+
+===============================
+Drop Down box issue after DevExtreme upgrade (Transactions)
+
+27. RouteFinderParams (already confirmed working), 
+28. CostServicesParams (Cost Services), **** Problem *****
+29. CostReports, 
+30. CostAccommodationParams, 
+31. CarP2pParams, 
+32. CarPerKmParams, 
+33. CarCityGroupsParams, 
+34. VoucherReportRange, 
+35. PrestoFutureBookings, 
+36. Exclusions (Presto), 
+37. InvoiceListingParams, 
+38. ElementsSearchResults, 
+39. Elements, 
+40. ElementImport
+

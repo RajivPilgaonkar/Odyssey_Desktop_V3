@@ -449,7 +449,7 @@ console.log('condition',condition);
         placeholder="Select a tax..."
         getSelectedRecord={onTaxSelect}
         showColumnHeaders={false}
-        value={compVar.selectedTax}
+        value={compVar.selectedTaxes_id}
         labelStyle={{width: 90}}
         dropDownStyle={{width: 60}}
       />

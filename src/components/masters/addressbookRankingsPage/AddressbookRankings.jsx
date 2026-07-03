@@ -122,7 +122,7 @@ function AddressbookRakings() {
           placeholder="Select a city..."
           getSelectedRecord={onCitySelect}
           showColumnHeaders={false}
-          value={compVar.city}
+          value={compVar.cities_id}
           labelStyle={{width: 50}}
           dropDownStyle={{width: 60}}
         />

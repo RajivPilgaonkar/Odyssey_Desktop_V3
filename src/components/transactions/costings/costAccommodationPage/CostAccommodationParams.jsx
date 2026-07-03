@@ -190,9 +190,8 @@ function CostAccommodationParams(props) {
   const onCityChanged = async (e) => {
     if (e !== undefined && e !== null) {
       compVar.cities_id = e[0].cities_id;
-      compVar.city = e[0].city;      
+      compVar.city = e[0].city;
       await updateAllLookups([2,3]);
-      forceRender();
     }
   }
 
@@ -202,7 +201,6 @@ function CostAccommodationParams(props) {
       compVar.hotels_id = e[0].Addressbook_id;
       compVar.hotel = e[0].OrgCity;
       await updateAllLookups([3]);
-      forceRender();
     }
   }
 
@@ -234,21 +232,18 @@ console.log('e',e);
   const citySwitchValueChanged = async (e) => {    
     compVar.citySwitchValue = e;
     await updateAllLookups([1,2,3]);
-    forceRender();
   }
 
   //**********************************************************/
   const hotelSwitchValueChanged = async (e) => {
     compVar.hotelSwitchValue = e;
     await updateAllLookups([2,3]);
-    forceRender();
   }
 
   //**********************************************************/
   const wefSwitchValueChanged = async (e) => {
     compVar.wefSwitchValue = e;
     await updateAllLookups([3]);
-    forceRender();
   }
 
   //**********************************************************/
@@ -296,7 +291,7 @@ console.log('in getSelectedParams', compVar.wef, compVar.dateRange);
     const labels = ['City', 'Hotel', 'Wef'];
     const placeholders = ["Select a city...","Select a hotel...", ""];
     const getSelectedRecs = [onCityChanged, onHotelChanged, onWefChanged];
-    const values = [compVar.city, compVar.hotel, compVar.dateRange];
+    const values = [compVar.cities_id, compVar.hotels_id, compVar.wef];
     const componentWidths = [200,320,200];
     const dropDownWidths = [300,400,250];
     const labelStyles = [{width: 40, flex: 0.1}, {width: 80, flex: 0.5}, {width: 80, flex: 0.5}] 

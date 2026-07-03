@@ -422,7 +422,7 @@ function PrestoFutureBookings() {
     const labels = ['Hotel'];
     const placeholders = ["Select a hotel..."];
     const getSelectedRecs = [onHotelChanged];
-    const values = [compVar.hotel];
+    const values = [compVar.hotels_id];
     const componentWidths = [270];
     const dropDownWidths = [500];
     const labelStyles = [{width: 80, flex: 0.15}] 

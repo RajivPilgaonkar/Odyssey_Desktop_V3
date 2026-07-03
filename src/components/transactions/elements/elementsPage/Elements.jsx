@@ -252,12 +252,12 @@ function Elements() {
 
     const lookups = [compVar.wefLookup];
     const fieldLists = [['DateRange']];
-    const valueExprs = ['wef'];
+    const valueExprs = ['Wef'];
     const displayExprs = ['DateRange'];
     const labels = ['Wef'];
     const placeholders = [""];
     const getSelectedRecs = [onWefChanged];
-    const values = [compVar.dateRange];
+    const values = [compVar.wef];
     const componentWidths = [230];
     const dropDownWidths = [250];
     const labelStyles = [{width: 80, flex: 0.8}] 

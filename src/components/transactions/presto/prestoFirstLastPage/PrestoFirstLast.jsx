@@ -368,22 +368,30 @@ function PrestoFirstLast(props) {
   //**********************************************************/
   const renderContent = () => {
 
-    const heights = getViewContainerHeights(compVar);
-    const containerHeight = heights.containerHeight - 170;
+    const ROW_HEIGHT = 34;
+    const GRID_HEADER_HEIGHT = 36;
+    const PAGER_HEIGHT = 40;
+    const EXTRA_HEADER_HEIGHT = 50;
+    const rowCount = (compVar.dataSource && compVar.dataSource.length) ? compVar.dataSource.length : 0;
+    const pagingVisible = rowCount > compVar.defaultPageSize;
+    const visibleRowCount = pagingVisible ? compVar.defaultPageSize : rowCount;
+    const gridHeight = GRID_HEADER_HEIGHT + (visibleRowCount + 1) * ROW_HEIGHT + (pagingVisible ? PAGER_HEIGHT : 0);
+    const containerHeight = EXTRA_HEADER_HEIGHT + gridHeight;
+    const popupHeight = containerHeight + 200;
 
     const open = (props.open === undefined) ? true : props.open;
-    
+
     return (
       <>
-        <Popup visible={open} height={550} width={900} onHiding={closePopup}>
+        <Popup visible={open} height={popupHeight} width={900} onHiding={closePopup}>
 
           {!dataFetched &&
-            <div className="master-grid-container" style={{height: containerHeight}}>
+            <div className="master-grid-container">
               <LoadIndicator id="large-indicator" height={60} width={60} />
             </div>
           }
 
-          {dataFetched && 
+          {dataFetched &&
             <>
               <div className="master-grid-container" style={{height: containerHeight, background: '#ffefcc', justifyContent: 'flex-start'}}>
 
@@ -402,7 +410,7 @@ function PrestoFirstLast(props) {
               {buttonsJsx()}
             </>
           }
-          
+
         </Popup>
 
       </>

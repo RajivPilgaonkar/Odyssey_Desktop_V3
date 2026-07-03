@@ -436,7 +436,7 @@ function Classes() {
         placeholder="Select a mode..."
         getSelectedRecord={onModeSelect}
         showColumnHeaders={false}
-        value={compVar.selectedTicket}
+        value={compVar.selectedTickets_id}
         labelStyle={{width: 60}}
         dropDownStyle={{width: 60}}
       />

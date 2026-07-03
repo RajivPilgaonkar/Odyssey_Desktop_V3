@@ -130,7 +130,7 @@ function RouteFinderParams(props) {
 
     const label = (index === 1) ? "From City" : "To City";
     const getSelectedRecord = (index === 1) ? onFromCitySelect : onToCitySelect;
-    const value = (index === 1) ? compVar.fromCity : compVar.toCity;
+    const value = (index === 1) ? compVar.fromCities_id : compVar.toCities_id;
 
     return (
       <DropDownGrid

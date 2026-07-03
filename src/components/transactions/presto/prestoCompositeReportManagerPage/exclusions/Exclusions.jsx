@@ -507,7 +507,7 @@ function Exclusions(props) {
     const labels = ['Exclusion Type'];
     const placeholders = ["Select an Exclusion Type..."];
     const getSelectedRecs = [getSelectedExcl];
-    const values = [compVar.quoExcl];
+    const values = [compVar.quoExcl_id];
     const componentWidths = [150];
     const dropDownWidths = [200];
     const labelStyles = [{width: 100, flex: 1}] 

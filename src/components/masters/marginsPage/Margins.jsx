@@ -450,7 +450,7 @@ function Margins() {
         placeholder="Select a type..."
         getSelectedRecord={onTypeSelect}
         showColumnHeaders={false}
-        value={compVar.selectedType}
+        value={compVar.selectedTypes_id}
         labelStyle={{width: 90}}
         dropDownStyle={{width: 60}}
       />

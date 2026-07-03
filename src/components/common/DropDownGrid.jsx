@@ -121,7 +121,7 @@ function DropDownGrid(props) {
             contentRender={dataGridRender}
             opened={gridBoxOpened}
             onOptionChanged={onGridBoxOpened}
-            value={props.value}    
+            value={props.value}
             style={dropDownStyle}
             dropDownOptions={dropDownOptions}
           />

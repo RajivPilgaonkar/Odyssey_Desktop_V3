@@ -267,7 +267,7 @@ function CostReports() {
     const labels = ['Report Type', 'Meal Plan', 'Currency', 'Country'];
     const placeholders = ["Select a report type...", "Select a meal plan...", "Select a currency...", "Select a country..."];
     const getSelectedRecs = [onReportTypeChanged, onMealPlanChanged, onCurrencyChanged, onCountryChanged];
-    const values = [compVar.activeReportType, compVar.activeMealPlan, compVar.activeCurrency, compVar.activeCountry];
+    const values = [compVar.activeReportTypes_id, compVar.activeMealPlans_id, compVar.activeCurrencies_id, compVar.activeCountries_id];
     const componentWidths = [250,200,200,200];
     const dropDownWidths = [300,200,200,200];
     const labelStyles = [{width: 0, flex: 0, display: 'none'},{width: 0, flex: 0, display: 'none'},{width: 0, flex: 0, display: 'none'},{width: 0, flex: 0, display: 'none'}] 

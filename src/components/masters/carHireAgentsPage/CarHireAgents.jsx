@@ -555,7 +555,7 @@ function CarHireAgents() {
           placeholder="Select an agent..."
           getSelectedRecord={onAgentSelect}
           showColumnHeaders={false}
-          value={compVar.selectedAgent}
+          value={compVar.selectedAgents_id}
           labelStyle={{width: 65}}
           dropDownStyle={{width: 60}}
           dropDownOptions={{width: 500}}
@@ -570,7 +570,7 @@ function CarHireAgents() {
           placeholder="Select a city..."
           getSelectedRecord={onCitySelect}
           showColumnHeaders={false}
-          value={compVar.selectedCity}
+          value={compVar.selectedCities_id}
           labelStyle={{width: 50}}
           dropDownStyle={{width: 60}}
           dropDownOptions={{width: 300}}

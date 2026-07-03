@@ -246,7 +246,7 @@ function ShortestRoute() {
           placeholder="Select a city..."
           getSelectedRecord={onFromCitySelect}
           showColumnHeaders={false}
-          value={compVar.fromCity}
+          value={compVar.fromCities_id}
           labelStyle={{width: 50}}
           dropDownStyle={{width: 60}}
         />
@@ -260,7 +260,7 @@ function ShortestRoute() {
           placeholder="Select a city..."
           getSelectedRecord={onToCitySelect}
           showColumnHeaders={false}
-          value={compVar.toCity}
+          value={compVar.toCities_id}
           labelStyle={{width: 30}}
           dropDownStyle={{width: 60}}
         />

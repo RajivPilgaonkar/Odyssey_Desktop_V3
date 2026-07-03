@@ -283,7 +283,7 @@ function ElementsSearchResults (props) {
     const labels = ['City'];
     const placeholders = ["Select a City..."];
     const getSelectedRecs = [getSelectedCity];
-    const values = [compVar.city];
+    const values = [compVar.cities_id];
     const componentWidths = [270];
     const dropDownWidths = [500];
     const labelStyles = [{width: 80, flex: 0.15}] 

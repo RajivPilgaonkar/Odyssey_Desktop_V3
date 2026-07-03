@@ -453,7 +453,7 @@ function AgentCancellations() {
         placeholder="Select an agent..."
         getSelectedRecord={onAgentSelect}
         showColumnHeaders={false}
-        value={compVar.selectedAgent}
+        value={compVar.selectedAgents_id}
         labelStyle={{width: 90}}
         dropDownStyle={{width: 250}}
       />

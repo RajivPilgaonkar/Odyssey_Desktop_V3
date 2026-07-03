@@ -183,7 +183,7 @@ function ElementImport(props) {
     const labels = ['Currency'];
     const placeholders = [""];
     const getSelectedRecs = [onCurrencyChanged];
-    const values = [compVar.currency];
+    const values = [compVar.currencies_id];
     const componentWidths = [120];
     const dropDownWidths = [250];
     const labelStyles = [{width: 80, flex: 0.8}] 

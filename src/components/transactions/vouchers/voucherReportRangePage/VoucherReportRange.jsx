@@ -192,7 +192,7 @@ function VoucherReportRange(props) {
     const labels = ['Report Type'];
     const placeholders = ["Select a report type..."];
     const getSelectedRecs = [onReportTypeChanged];
-    const values = [compVar.activeReportType];
+    const values = [compVar.activeReportTypes_id];
     const componentWidths = [250];
     const dropDownWidths = [300];
     const labelStyles = [{}] 

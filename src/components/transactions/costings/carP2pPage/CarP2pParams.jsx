@@ -251,7 +251,6 @@ function CarP2pParams(props) {
       compVar.agents_id = e[0].Addressbook_id;
       compVar.agent = e[0].OrgCity;
       await updateAllLookups([2,3,4]);
-      forceRender();
     }
   }
 
@@ -259,9 +258,8 @@ function CarP2pParams(props) {
   const onFromCityChanged = async (e) => {
     if (e !== undefined && e !== null) {
       compVar.fromCities_id = e[0].cities_id;
-      compVar.fromCity = e[0].city;      
+      compVar.fromCity = e[0].city;
       await updateAllLookups([3,4]);
-      forceRender();
     }
   }
 
@@ -269,9 +267,8 @@ function CarP2pParams(props) {
   const onToCityChanged = async (e) => {
     if (e !== undefined && e !== null) {
       compVar.toCities_id = e[0].cities_id;
-      compVar.toCity = e[0].city;      
+      compVar.toCity = e[0].city;
       await updateAllLookups([4]);
-      forceRender();
     }
   }
 
@@ -305,28 +302,24 @@ function CarP2pParams(props) {
   const agentSwitchValueChanged = async (e) => {
     compVar.agentSwitchValue = e;
     await updateAllLookups([1,2,3,4]);
-    forceRender();
   }
 
   //**********************************************************/
   const fromCitySwitchValueChanged = async (e) => {    
     compVar.fromCitySwitchValue = e;
     await updateAllLookups([2,3,4]);
-    forceRender();
   }
 
   //**********************************************************/
   const toCitySwitchValueChanged = async (e) => {    
     compVar.toCitySwitchValue = e;
     await updateAllLookups([3,4]);
-    forceRender();
   }
 
   //**********************************************************/
   const wefSwitchValueChanged = async (e) => {
     compVar.wefSwitchValue = e;
     await updateAllLookups([4]);
-    forceRender();
   }
 
   //**********************************************************/
@@ -369,12 +362,12 @@ function CarP2pParams(props) {
 
     const lookups = [compVar.agentLookup, compVar.fromCityLookup, compVar.toCityLookup, compVar.wefLookup];
     const fieldLists = [['OrgCity'],['city'],['city'],['DateRange']];
-    const valueExprs = ['Addressbook_id', 'cities_id', 'cities_id', 'wef'];
+    const valueExprs = ['Addressbook_id', 'cities_id', 'cities_id', 'Wef'];
     const displayExprs = ['OrgCity', 'city', 'city', 'DateRange'];
     const labels = ['Agent', 'From', 'To', 'Wef'];
     const placeholders = ["Select an agent...", "Select a city...", "Select a city...", ""];
     const getSelectedRecs = [onAgentChanged, onFromCityChanged, onToCityChanged, onWefChanged];
-    const values = [compVar.agent, compVar.fromCity, compVar.toCity, compVar.dateRange];
+    const values = [compVar.agents_id, compVar.fromCities_id, compVar.toCities_id, compVar.wef];
     const componentWidths = [270,150,150,230];
     const dropDownWidths = [500,300,300,250];
     const labelStyles = [{width: 80, flex: 0.15}, {width: 80, flex: 0.5}, {width: 80, flex: 0.5}, {width: 80, flex: 0.8}] 

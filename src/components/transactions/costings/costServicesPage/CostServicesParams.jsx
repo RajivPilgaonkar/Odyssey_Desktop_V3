@@ -200,7 +200,6 @@ function CostServicesParams(props) {
       compVar.agents_id = e[0].Addressbook_id;
       compVar.agent = e[0].OrgCity;
       await updateAllLookups([2,3]);
-      forceRender();
     }
   }
 
@@ -208,9 +207,8 @@ function CostServicesParams(props) {
   const onServiceCityChanged = async (e) => {
     if (e !== undefined && e !== null) {
       compVar.serviceCities_id = e[0].cities_id;
-      compVar.serviceCity = e[0].city;      
+      compVar.serviceCity = e[0].city;
       await updateAllLookups([3]);
-      forceRender();
     }
   }
 
@@ -241,21 +239,18 @@ function CostServicesParams(props) {
   const agentSwitchValueChanged = async (e) => {
     compVar.agentSwitchValue = e;
     await updateAllLookups([1,2,3]);
-    forceRender();
   }
 
   //**********************************************************/
   const serviceCitySwitchValueChanged = async (e) => {    
     compVar.serviceCitySwitchValue = e;
     await updateAllLookups([2,3]);
-    forceRender();
   }
 
   //**********************************************************/
   const wefSwitchValueChanged = async (e) => {
     compVar.wefSwitchValue = e;
     await updateAllLookups([3]);
-    forceRender();
   }
 
   //**********************************************************/
@@ -296,12 +291,12 @@ function CostServicesParams(props) {
 
     const lookups = [compVar.agentLookup, compVar.serviceCityLookup, compVar.wefLookup];
     const fieldLists = [['OrgCity'],['city'],['DateRange']];
-    const valueExprs = ['Addressbook_id', 'cities_id', 'wef'];
+    const valueExprs = ['Addressbook_id', 'cities_id', 'Wef'];
     const displayExprs = ['OrgCity', 'city', 'DateRange'];
     const labels = ['Agent', 'Service City', 'Wef'];
     const placeholders = ["Select an agent...", "Select a city...", ""];
     const getSelectedRecs = [onAgentChanged, onServiceCityChanged, onWefChanged];
-    const values = [compVar.agent, compVar.serviceCity, compVar.dateRange];
+    const values = [compVar.agents_id, compVar.serviceCities_id, compVar.wef];
     const componentWidths = [320,200,200];
     const dropDownWidths = [400,300,250];
     const labelStyles = [{width: 80, flex: 0.15}, {width: 80, flex: 0.5}, {width: 80, flex: 0.8}] 

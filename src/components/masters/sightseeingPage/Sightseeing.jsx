@@ -609,7 +609,7 @@ function Sightseeing() {
         placeholder="Select a city..."
         getSelectedRecord={onCitySelect}
         showColumnHeaders={false}
-        value={compVar.selectedCity}
+        value={compVar.selectedCities_id}
         labelStyle={{width: 100}}
         dropDownStyle={{width: 100}}
         dropDownOptions={{width: 300}}
